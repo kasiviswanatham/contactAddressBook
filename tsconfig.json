@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["jest", "node"],
+    "skipLibCheck": true,
+    "isolatedModules": true, // Ensures type-only imports are removed
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "jsx": "preserve", // If using Vue with JSX
+    "baseUrl": ".", // Optional, for alias resolution
+    "paths": {
+      "@/*": ["src/*"] // If using @ alias
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
